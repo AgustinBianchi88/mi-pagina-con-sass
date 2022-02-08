@@ -1,0 +1,211 @@
+/* esto es un comentario de bloque en css puro */
+/* MOBILE FIRST */
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif; }
+
+/* Smartphone */
+body {
+  width: 100%;
+  height: 100vh;
+  color: #34495e;
+  overflow-x: hidden; }
+
+.border {
+  border: solid 1px #000;
+  background-color: #d3d3d3; }
+
+/* Header */
+header {
+  text-transform: uppercase;
+  text-align: center; }
+
+/* GRIDS por AREAS */
+#gridAreas {
+  display: grid;
+  /* estructura */
+  grid-template-areas: "cabeza" "menu" "productos" "brazo" "servicios" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+
+/* Nombrar cada Area */
+header {
+  grid-area: cabeza;
+  padding: 20px; }
+
+footer {
+  grid-area: pie;
+  padding: 10px; }
+
+#productos {
+  grid-area: productos;
+  padding: 20px; }
+
+#servicios {
+  grid-area: servicios;
+  padding: 10px; }
+
+nav {
+  grid-area: menu;
+  padding: 10px; }
+
+aside {
+  grid-area: brazo;
+  padding: 10px; }
+
+.ruger {
+  width: 400px;
+  height: 400px; }
+
+.glock {
+  width: 300px;
+  height: 300px; }
+
+.bocker {
+  width: 200px;
+  height: 250px; }
+
+/* Item de Menu */
+span {
+  background-color: #fff;
+  margin-bottom: 5px;
+  padding: 10px; }
+
+span:hover {
+  background-color: #34495e;
+  color: azure; }
+
+/* Articulos de galeria */
+article {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 5px;
+  text-align: center;
+  font-size: 0.75rem;
+  padding: 10px; }
+
+article h3 {
+  margin-bottom: 5px;
+  text-transform: uppercase; }
+
+article p {
+  padding: 10px; }
+
+/* Flex */
+.flexMenu {
+  display: flex;
+  flex-direction: column; }
+
+.productosFlex {
+  display: flex;
+  flex-flow: row wrap; }
+
+/* Tablets */
+@media (min-width: 480px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    color: #34495e; }
+  /* GRIDS por AREAS */
+  #gridAreas {
+    display: grid;
+    /* estructura */
+    grid-template-areas: "menu menu" "cabeza cabeza" "productos productos" "servicios brazo" "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px; }
+  /* Items de Menu */
+  span {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 120px;
+    margin-left: 5px;
+    height: 40px;
+    text-align: center; }
+  span:hover {
+    background-color: #34495e;
+    color: azure; }
+  /* articulo de galeria */
+  article {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px; }
+  /* Flex */
+  .flexMenu {
+    display: flex;
+    flex-direction: row; }
+  .productosFlex {
+    display: flex;
+    flex-flow: row nowrap; } }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    color: #34495e;
+    overflow-x: hidden; }
+  span {
+    background-color: #5e647c;
+    margin: 5px 0;
+    padding: 10px; }
+  span:hover {
+    background-color: #34495e;
+    color: azure; }
+  article {
+    background-color: #fffcfb;
+    border-radius: 4px;
+    margin: 5px;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px; }
+  /* GRIDS por AREAS */
+  #gridAreas {
+    display: grid;
+    /* estructura */
+    grid-template-areas: "menu cabeza cabeza" "menu productos brazo" "menu servicios brazo" "menu pie pie";
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 100px 1fr 1fr 75px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px; }
+  /* Flex */
+  .flexMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start; }
+  .productosFlex {
+    display: flex;
+    flex-flow: row nowrap; } }
+
+/* animacion del titulo */
+.nombreEmpresa {
+  animation-name: titulo;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-delay: 3s; }
+
+@keyframes titulo {
+  from {
+    transform: translate(-400px);
+    opacity: 0; }
+  to {
+    transform: translate(0);
+    opacity: 1; } }
+
+header {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
+
+footer {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
