@@ -14,8 +14,8 @@ body {
   overflow-x: hidden; }
 
 .border {
-  border: solid 1px #000;
-  background-color: #d3d3d3; }
+  border: 0.5px white;
+  background-color: #111111; }
 
 /* Header */
 header {
@@ -72,6 +72,10 @@ aside {
 .logoEmpresa {
   width: 200px;
   height: 150px; }
+
+.fotoLocal {
+  width: 210px;
+  height: 615px; }
 
 /* Item de Menu */
 span {

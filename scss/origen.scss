@@ -18,8 +18,8 @@ body {
 }
 
 .border {
-    border: solid 1px #000;
-    background-color: #d3d3d3;
+    border: 0.5px rgb(255, 255, 255);
+    background-color: #111111;
 }
 
 /* Header */
@@ -101,6 +101,10 @@ aside {
     height: 150px;
 }
 
+.fotoLocal {
+    width: 210px;
+    height: 615px;
+}
 /* Item de Menu */
 span {
     background-color: #fff;
