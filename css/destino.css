@@ -69,6 +69,10 @@ aside {
   width: 200px;
   height: 250px; }
 
+.logoEmpresa {
+  width: 200px;
+  height: 150px; }
+
 /* Item de Menu */
 span {
   background-color: #fff;
@@ -207,5 +211,13 @@ header {
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
 
 footer {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
+
+nav {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
+
+.tambien {
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
