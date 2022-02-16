@@ -225,3 +225,21 @@ nav {
 .tambien {
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); }
+
+.titulo-oferta, .titulo-oferta--principal, .titulo-oferta--secundario {
+  font-size: 10px; }
+  .titulo-oferta--principal {
+    color: #009ffd;
+    font-weight: bold; }
+  .titulo-oferta--secundario {
+    color: #000;
+    font-weight: lighter; }
+
+.p-cuchi {
+  color: red; }
+
+.p-pistol {
+  color: green; }
+
+.p-rifle {
+  color: blue; }

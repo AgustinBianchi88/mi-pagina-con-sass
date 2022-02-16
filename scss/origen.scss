@@ -317,3 +317,32 @@ nav{
     background-color: #2a2a72;
     background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
 }
+
+.titulo-oferta
+{
+    font-size: 10px;
+
+    &--principal
+    {     
+        @extend .titulo-oferta;
+        color: #009ffd;
+        font-weight: bold;
+    }
+
+    &--secundario
+    {
+        @extend .titulo-oferta;
+        color: #000;        
+        font-weight: lighter;
+    }
+}
+
+
+//map
+$weapon-colors: ("cuchi": red ,"pistol": green, "rifle": blue);
+
+@each $name, $color in $weapon-colors {
+    .p-#{$name} {
+      color: $color;
+    }
+  }
